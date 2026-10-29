@@ -1,0 +1,29 @@
+FIND THE BEST FOR YOU - POWERSHELL QUICK START
+
+1) Open PowerShell in this extracted project folder.
+2) Check files:
+   Get-ChildItem
+3) Create environment (Python 3.12 recommended):
+   py -3.12 -m venv .venv
+4) Activate it:
+   .\.venv\Scripts\Activate.ps1
+5) Install dependencies:
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+6) Start website/backend:
+   uvicorn main:app --reload
+7) Open:
+   http://127.0.0.1:8000
+   http://127.0.0.1:8000/docs
+   http://127.0.0.1:8000/api/health
+
+GITHUB UPLOAD (run in this project folder after creating an empty GitHub repo):
+   git init
+   git add .
+   git status
+   git commit -m "Initial project upload"
+   git branch -M main
+   git remote add origin https://github.com/YOUR-USERNAME/find-the-best-for-you.git
+   git push -u origin main
+
+Replace YOUR-USERNAME with your GitHub username. Review `git status` before committing; never upload passwords, API keys, or real user data.
